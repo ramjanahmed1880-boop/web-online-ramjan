@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me — RAMJAN AHMED (ramjanweb.online)</title>
+  <meta name="description" content="Learn about Ramjan Ahmed, Expert HTML5/CSS3/Vanilla JS Developer, Web Security Specialist, and UI/UX Designer." />
+  
+  <meta property="og:title" content="About Me — RAMJAN AHMED" />
+  <meta property="og:description" content="Full-stack Web Developer, UI/UX Designer, & Security Specialist." />
+  <meta property="og:image" content="/src/assets/images/ramjan_hero_avatar_1794150983254.jpg" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+  <div class="scroll-progress-bar"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-glow-orb orb-cyan"></div>
+  <div class="bg-glow-orb orb-purple"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wordmark">
+        <div class="brand-icon">R</div>
+        <span>RAMJAN<span class="cyan-text">WEB</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Me</a></li>
+          <li><a href="free-website.html" class="nav-link">Free Website</a></li>
+          <li><a href="premium-apps.html" class="nav-link">Premium Apps</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Hire Me</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link active">About Me</a>
+    <a href="free-website.html" class="mobile-nav-link">Free Website</a>
+    <a href="premium-apps.html" class="mobile-nav-link">Premium Apps</a>
+    <a href="projects.html" class="mobile-nav-link">Projects</a>
+    <a href="services.html" class="mobile-nav-link">Services</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- About Hero -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker">✦ PASSIONATE DIGITAL CREATOR</span>
+        <h2>ABOUT RAMJAN AHMED</h2>
+        <p class="section-subtitle">Dedicated to creating high-speed, 3D animated, secure web systems and digital products.</p>
+      </div>
+
+      <div class="grid-2" style="align-items: center; margin-bottom: 5rem;">
+        <div class="glass-card reveal-left">
+          <img src="/src/assets/images/ramjan_hero_avatar_1794150983254.jpg" alt="Ramjan Ahmed" style="width: 100%; height: 420px; object-fit: cover; border-radius: var(--radius-md); border: 1px solid var(--border-neon-cyan);" />
+        </div>
+
+        <div class="reveal-right">
+          <h3 style="font-size: 1.8rem; margin-bottom: 1rem;" class="gradient-text">Crafting the Future of Web & Mobile Interfaces</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Hello! I'm Ramjan Ahmed, the creator of <strong>ramjanweb.online</strong>. I specialize in building custom 3D web applications, ultra-fast static landing pages, secure password authorization systems, and sleek mobile apps.
+          </p>
+          <p style="margin-bottom: 2rem;">
+            My technical discipline combines clean HTML5 semantic markup, CSS3 glassmorphism, native Canvas 3D particle physics, and robust Vanilla JavaScript (ES6+).
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
+            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <span style="font-size: 0.8rem; color: var(--neon-cyan); font-family: var(--font-mono);">SPECIALTY</span>
+              <h4 style="font-size: 1.05rem;">3D Web & Canvas UI</h4>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <span style="font-size: 0.8rem; color: var(--neon-purple); font-family: var(--font-mono);">SECURITY</span>
+              <h4 style="font-size: 1.05rem;">API Password Auth</h4>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <span style="font-size: 0.8rem; color: var(--neon-blue); font-family: var(--font-mono);">DEPLOYMENT</span>
+              <h4 style="font-size: 1.05rem;">GitHub & Render Static</h4>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-glass);">
+              <span style="font-size: 0.8rem; color: #10b981; font-family: var(--font-mono);">PERFORMANCE</span>
+              <h4 style="font-size: 1.05rem;">60 FPS Animation</h4>
+            </div>
+          </div>
+
+          <a href="contact.html" class="btn btn-primary">
+            <i data-lucide="send"></i> Start A Project Together
+          </a>
+        </div>
+      </div>
+
+      <!-- Skills Matrix -->
+      <div class="section-header reveal">
+        <span class="section-kicker">✦ CORE COMPETENCIES</span>
+        <h2>TECHNICAL SKILLS MATRIX</h2>
+      </div>
+
+      <div class="grid-3">
+        <div class="glass-card reveal">
+          <i data-lucide="code" style="color: var(--neon-cyan); width: 36px; height: 36px; margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Frontend Mastery</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">HTML5, CSS3, Vanilla JS (ES6+), Canvas 2D/3D API, Glassmorphism, CSS Grid & Flexbox, SVG animations.</p>
+        </div>
+
+        <div class="glass-card reveal">
+          <i data-lucide="shield" style="color: var(--neon-purple); width: 36px; height: 36px; margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Security & Verification</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Password authorization flow, protected download routes, API header auth, rate limiting checks.</p>
+        </div>
+
+        <div class="glass-card reveal">
+          <i data-lucide="smartphone" style="color: var(--neon-blue); width: 36px; height: 36px; margin-bottom: 1rem;"></i>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Mobile & Touch UX</h3>
+          <p style="font-size: 0.9rem; margin-bottom: 1rem;">Touch ripple feedback, swipe 3D tilt, responsive drawers, multi-device viewport scaling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Password Verification Modal Component -->
+  <div id="passwordModal" class="modal-overlay">
+    <div class="modal-card">
+      <button id="closePasswordModal" class="modal-close" aria-label="Close Modal">&times;</button>
+      <h3 id="passwordModalTitle" class="gradient-text">Password Verification</h3>
+      <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.5rem;">This asset requires security password authorization.</p>
+      <form id="passwordVerifyForm">
+        <div class="form-group">
+          <label class="form-label" for="downloadPasswordInput">Access Password</label>
+          <input type="password" id="downloadPasswordInput" class="form-input" placeholder="Enter password..." required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Verify & Access</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating Contact Button -->
+  <div class="floating-contact-wrap">
+    <button id="floatingContactBtn" class="floating-contact-btn" aria-label="Open Contact">
+      <i data-lucide="message-square"></i>
+    </button>
+
+    <div id="contactPanel" class="contact-panel">
+      <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;" class="cyan-text">Quick Contact</h4>
+      <a href="https://wa.me/8801700000000" target="_blank" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.2); color: #25d366;"><i data-lucide="message-circle"></i></div>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://t.me/ramjanweb" target="_blank" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(0, 136, 204, 0.2); color: #0088cc;"><i data-lucide="send"></i></div>
+        <span>Telegram</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background: var(--bg-glass-heavy); border-top: 1px solid var(--border-glass); padding: 3rem 0; margin-top: 4rem;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>© 2026 RAMJAN AHMED (ramjanweb.online). All Rights Reserved.</div>
+      <button id="backToTop" class="btn btn-secondary btn-icon-only" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/mouse-effects.js"></script>
+  <script src="/js/touch-effects.js"></script>
+  <script src="/js/downloads.js"></script>
+  <script src="/js/social-links.js"></script>
+  <script src="/js/contact.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

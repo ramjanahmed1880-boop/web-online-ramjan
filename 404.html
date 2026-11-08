@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | RAMJAN AHMED</title>
+  <meta name="description" content="The requested page could not be found on ramjanweb.online." />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <div class="scroll-progress-bar"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-glow-orb orb-cyan"></div>
+  <div class="bg-glow-orb orb-purple"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wordmark">
+        <div class="brand-icon">R</div>
+        <span>RAMJAN<span class="cyan-text">WEB</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="free-website.html" class="nav-link">Free Website</a></li>
+          <li><a href="premium-apps.html" class="nav-link">Premium Apps</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-primary">
+          <span>Back to Home</span>
+          <i data-lucide="home"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Main Container -->
+  <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 8rem 1.5rem 4rem 1.5rem;">
+    <div class="glass-card reveal" style="max-width: 600px; width: 100%; text-align: center; padding: 4rem 2rem; border-color: var(--border-neon-cyan); box-shadow: 0 0 50px var(--neon-cyan-glow);">
+      <div style="font-size: 5rem; font-weight: 900; font-family: var(--font-mono); line-height: 1; margin-bottom: 0.5rem;" class="gradient-text">
+        404
+      </div>
+      <span class="badge badge-cyan" style="margin-bottom: 1.5rem;">SYSTEM DIAGNOSTIC: RESOURCE NOT FOUND</span>
+      <h2 style="font-size: 1.75rem; margin-bottom: 1rem;">LOST IN CYBERSPACE?</h2>
+      <p style="color: var(--text-muted); margin-bottom: 2rem;">
+        The requested URL path does not exist on ramjanweb.online or may have been updated in a recent website version release.
+      </p>
+
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="index.html" class="btn btn-primary">
+          <i data-lucide="home"></i> Return to Home
+        </a>
+        <a href="free-website.html" class="btn btn-secondary">
+          <i data-lucide="code"></i> Browse Versions
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background: var(--bg-glass-heavy); border-top: 1px solid var(--border-glass); padding: 2rem 0; text-align: center; font-size: 0.85rem; color: var(--text-dim);">
+    <div class="container">
+      © 2026 RAMJAN AHMED (ramjanweb.online). All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/mouse-effects.js"></script>
+  <script src="/js/touch-effects.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "RAMJAN AHMED - Ultra Premium 3D Personal Website",
+  "description": "Official personal website of Ramjan Ahmed (ramjanweb.online) featuring 3D animations, neon design, free website versions, premium apps, projects, and services.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

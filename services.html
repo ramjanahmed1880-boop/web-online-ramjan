@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — RAMJAN AHMED (ramjanweb.online)</title>
+  <meta name="description" content="Professional web development services, 3D animated landing pages, website security hardening, and API integrations by Ramjan Ahmed." />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+  <div class="scroll-progress-bar"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-glow-orb orb-cyan"></div>
+  <div class="bg-glow-orb orb-purple"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wordmark">
+        <div class="brand-icon">R</div>
+        <span>RAMJAN<span class="cyan-text">WEB</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Me</a></li>
+          <li><a href="free-website.html" class="nav-link">Free Website</a></li>
+          <li><a href="premium-apps.html" class="nav-link">Premium Apps</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Hire Me</span>
+          <i data-lucide="arrow-right"></i>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="about.html" class="mobile-nav-link">About Me</a>
+    <a href="free-website.html" class="mobile-nav-link">Free Website</a>
+    <a href="premium-apps.html" class="mobile-nav-link">Premium Apps</a>
+    <a href="projects.html" class="mobile-nav-link">Projects</a>
+    <a href="services.html" class="mobile-nav-link active">Services</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <!-- Page Title -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker">✦ PROFESSIONAL ENGINEERING SOLUTIONS</span>
+        <h2>OUR SERVICES</h2>
+        <p class="section-subtitle">Tailored digital engineering services for businesses, creators, and online platform owners.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Service 1 -->
+        <div class="glass-card reveal">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(0, 243, 255, 0.1); border: 1px solid var(--border-neon-cyan); color: var(--neon-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+            <i data-lucide="layout"></i>
+          </div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">3D Personal & Corporate Websites</h3>
+          <p style="margin-bottom: 1.5rem;">Custom high-end personal portfolio sites, company landing pages, and interactive 3D web applications built with pure HTML5, CSS3 & Vanilla JavaScript.</p>
+          <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i data-lucide="send"></i> Request Service</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="glass-card reveal">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(157, 78, 221, 0.1); border: 1px solid var(--border-neon-purple); color: var(--neon-purple); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Password Protection & Security</h3>
+          <p style="margin-bottom: 1.5rem;">API-level password verification systems, download authorization security, rate limiting, and protection against unauthorized file scraping.</p>
+          <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i data-lucide="send"></i> Secure Your Site</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="glass-card reveal">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(0, 119, 255, 0.1); border: 1px solid rgba(0, 119, 255, 0.3); color: var(--neon-blue); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 0.75rem;">Mobile Web & App Development</h3>
+          <p style="margin-bottom: 1.5rem;">Fully responsive mobile optimization, finger-touch gesture feedback, PWA conversion, and custom Android application development.</p>
+          <a href="contact.html" class="btn btn-secondary" style="width: 100%;"><i data-lucide="send"></i> Build App</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Button -->
+  <div class="floating-contact-wrap">
+    <button id="floatingContactBtn" class="floating-contact-btn" aria-label="Open Contact">
+      <i data-lucide="message-square"></i>
+    </button>
+    <div id="contactPanel" class="contact-panel">
+      <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;" class="cyan-text">Quick Contact</h4>
+      <a href="https://wa.me/8801700000000" target="_blank" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.2); color: #25d366;"><i data-lucide="message-circle"></i></div>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://t.me/ramjanweb" target="_blank" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(0, 136, 204, 0.2); color: #0088cc;"><i data-lucide="send"></i></div>
+        <span>Telegram</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer style="background: var(--bg-glass-heavy); border-top: 1px solid var(--border-glass); padding: 3rem 0; margin-top: 4rem;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>© 2026 RAMJAN AHMED (ramjanweb.online). All Rights Reserved.</div>
+      <button id="backToTop" class="btn btn-secondary btn-icon-only" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/mouse-effects.js"></script>
+  <script src="/js/touch-effects.js"></script>
+  <script src="/js/downloads.js"></script>
+  <script src="/js/social-links.js"></script>
+  <script src="/js/contact.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

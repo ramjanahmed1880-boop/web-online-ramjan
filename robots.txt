@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ramjanweb.online/sitemap.xml

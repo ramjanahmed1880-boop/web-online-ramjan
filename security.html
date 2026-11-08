@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security — RAMJAN AHMED (ramjanweb.online)</title>
+  <meta name="description" content="Website security audits, password authorization systems, and API protection by Ramjan Ahmed." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+  <div class="scroll-progress-bar"></div>
+  <canvas id="bg-canvas"></canvas>
+  <div class="bg-glow-orb orb-cyan"></div>
+  <div class="bg-glow-orb orb-purple"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-wordmark">
+        <div class="brand-icon">R</div>
+        <span>RAMJAN<span class="cyan-text">WEB</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="free-website.html" class="nav-link">Free Website</a></li>
+          <li><a href="premium-apps.html" class="nav-link">Premium Apps</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="security.html" class="nav-link active">Security</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary">
+          <span>Audit Site</span>
+          <i data-lucide="shield-check"></i>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker">✦ CYBERSECURITY & HARDENING</span>
+        <h2>WEBSITE SECURITY SERVICES</h2>
+        <p class="section-subtitle">Protecting your web applications from unauthorized access, password breaches, and automated scrapers.</p>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 3rem;">
+        <div class="glass-card reveal-left">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(0, 243, 255, 0.1); border: 1px solid var(--border-neon-cyan); color: var(--neon-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+            <i data-lucide="key"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;" class="gradient-text">Server-Side Password Verification</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Ensure that protected download links or premium website versions cannot be leaked through plain public JavaScript. Our API verifies passwords on the backend before serving authorized file URLs.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            <li>✓ Tokenized bearer authorization</li>
+            <li>✓ Rate limiting & brute force mitigation</li>
+            <li>✓ Masked file routing</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary"><i data-lucide="shield-check"></i> Request Security Integration</a>
+        </div>
+
+        <div class="glass-card reveal-right">
+          <div style="width: 50px; height: 50px; border-radius: var(--radius-md); background: rgba(157, 78, 221, 0.1); border: 1px solid var(--border-neon-purple); color: var(--neon-purple); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.25rem;">
+            <i data-lucide="lock"></i>
+          </div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;" class="gradient-text">Full Vulnerability Audit</h3>
+          <p style="margin-bottom: 1.25rem;">
+            Comprehensive security audit of your web source code, CORS headers, API keys exposure, XSS prevention, and SSL configuration.
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;">
+            <li>✓ OWASP Top 10 compliance testing</li>
+            <li>✓ Cross-Origin Isolation & Security headers</li>
+            <li>✓ Sanitized form input checks</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary"><i data-lucide="file-text"></i> Order Security Audit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Contact Button -->
+  <div class="floating-contact-wrap">
+    <button id="floatingContactBtn" class="floating-contact-btn" aria-label="Open Contact">
+      <i data-lucide="message-square"></i>
+    </button>
+    <div id="contactPanel" class="contact-panel">
+      <h4 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 1rem;" class="cyan-text">Quick Contact</h4>
+      <a href="https://wa.me/8801700000000" target="_blank" rel="noopener noreferrer" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(37, 211, 102, 0.2); color: #25d366;"><i data-lucide="message-circle"></i></div>
+        <span>WhatsApp</span>
+      </a>
+      <a href="https://t.me/ramjanweb" target="_blank" rel="noopener noreferrer" class="contact-panel-item">
+        <div class="contact-icon-box" style="background: rgba(0, 136, 204, 0.2); color: #0088cc;"><i data-lucide="send"></i></div>
+        <span>Telegram</span>
+      </a>
+    </div>
+  </div>
+
+  <footer style="background: var(--bg-glass-heavy); border-top: 1px solid var(--border-glass); padding: 3rem 0; margin-top: 4rem;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <div>© 2026 RAMJAN AHMED (ramjanweb.online). All Rights Reserved.</div>
+      <button id="backToTop" class="btn btn-secondary btn-icon-only" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+    </div>
+  </footer>
+
+  <script src="/js/config.js"></script>
+  <script src="/js/api.js"></script>
+  <script src="/js/navigation.js"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/js/mouse-effects.js"></script>
+  <script src="/js/touch-effects.js"></script>
+  <script src="/js/social-links.js"></script>
+  <script src="/js/contact.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

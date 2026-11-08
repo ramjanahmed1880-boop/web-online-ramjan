@@ -1,0 +1,57 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+
+    "popupNotice": {
+      ".read": true,
+      ".write": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')",
+      ".validate": "newData.hasChildren(['title', 'description'])"
+    },
+
+    "freeWebsiteVersions": {
+      ".read": true,
+      "$versionId": {
+        ".write": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')",
+        ".validate": "newData.hasChildren(['name', 'version'])"
+      }
+    },
+
+    "premiumApps": {
+      ".read": true,
+      "$appId": {
+        ".write": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')",
+        ".validate": "newData.hasChildren(['name', 'version'])"
+      }
+    },
+
+    "projects": {
+      ".read": true,
+      "$projectId": {
+        ".write": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')"
+      }
+    },
+
+    "services": {
+      ".read": true,
+      "$serviceId": {
+        ".write": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')"
+      }
+    },
+
+    "messages": {
+      ".read": "auth != null && (auth.token.admin === true || auth.token.email === 'mdramjanislam9220@gmail.com')",
+      "$messageId": {
+        ".write": "!data.exists() && newData.hasChildren(['name', 'email', 'message'])",
+        ".validate": "newData.child('email').val().matches(/^[^@]+@[^@]+\\.[^@]+$/)"
+      }
+    },
+
+    "users": {
+      "$uid": {
+        ".read": "auth != null && (auth.uid === $uid || auth.token.admin === true)",
+        ".write": "auth != null && (auth.uid === $uid || auth.token.admin === true)"
+      }
+    }
+  }
+}
